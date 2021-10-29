@@ -15,22 +15,28 @@ int main()
     cout << "Enter your last name:";
     cin >> lname; cout << endl;
     //cin>>favmeal; cout << endl;
+    cin.ignore();
     cout << "Enter your favorite movie:";
-    cin >> favmovie; cout << endl;
+    getline(cin,favmovie); cout << endl;
     cout << "Enter your favorite meal: ";
-    cin>>favmeal;
+    getline(cin,favmeal);
     cout << endl;
 
     cout << ".......My Simple Profile is as follows.....\n\n";
-    cout << "The Profile of " << fname << " " << lname << endl;
-    cout << "First Name :" << fname << endl;
-    cout << "Last Name :" << lname << endl;
-    cout << "Full Name :" << fname << " " << lname << endl;
-    cout << "Favorite Meal :" << favmeal << endl;
-    cout << "Favorite Movie :" << favmovie << endl;
-    cout << "\n\n";
-    cout << "End of "<<fname<<" "<<lname<<"'s user profile \n\n\n\n";
-
+    cout << "......................................................................\n";
+    cout << "......................................................................\n";
+    cout << ". ";cout << "The Profile of " << fname << " " << lname << endl;
+    cout << ". ";cout << "First Name :" << fname<< endl;
+    cout << ". ";cout << "Last Name :" << lname<< endl;
+    cout << ". ";cout << "Full Name :" << fname << " " << lname<< endl;
+    cout << ". ";cout << "Favorite Meal :" << favmeal<< endl;
+    cout << ". ";cout << "Favorite Movie :" << favmovie<< endl;
+    cout << ". ";cout << "\n";
+    cout << ". ";cout << "End of " << fname << " " << lname << "'s user profile\n";
+    cout << ". ";
+    cout << ". ";
+    cout << ".................................................................\n";
+    cout << ".....................................................................\n\n\n\n";
     return 0;
 }
 
